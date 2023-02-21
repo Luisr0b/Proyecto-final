@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('correo')->unique();
-            $table->string('n-nomina')->unique();
+            $table->string('n_nomina')->unique();
             $table->timestamps();
         });
     }

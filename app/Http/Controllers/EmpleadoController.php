@@ -45,10 +45,10 @@ class EmpleadoController extends Controller
      */
     public function store(Request $request)
     {
-        $empleados = new Empleado();
+        $empleado = new Empleado();
         $empleado->nombre = $request->nombre;
         $empleado->correo = $request->correo;
-        $empleado->n-nomina = $request->n-nomina;
+        $empleado->n_nomina = $request->n_nomina;
         $empleado->save();
 
         return redirect('/empleados');
