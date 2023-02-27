@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Agregar empleado</h1>
-        <form action="/producto" method="POST">
+        <form action="/empleado" method="POST">
             @csrf
             <label for="nombre">Nombre del empleado</label><br>
             <input type="text" name="nombre" id="nombre" required><br>
@@ -22,9 +22,15 @@
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
-            <label for="n-nomina">Numero de nomina</label><br>
-            <input type="text" name="n-nomina" id="n-nomina"><br>
-            @error('n-nomina')
+            <label for="n_nomina">Numero de nomina</label><br>
+            <input type="number" name="n_nomina" id="n_nomina"><br>
+            @error('n_nomina')
+                <h5>{{$meesage }}</h5>
+            @enderror
+            <br>
+            <label for="departamento">Departamento</label><br>
+            <input type="text" name="departamento" id="departamento"><br>
+            @error('departamento')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>

@@ -9,7 +9,7 @@
 <body>
     <h1>Empleados</h1>
 
-    <a href="empleado/create">Agregar empleado</a>
+    <a href="empleado/create">Edi empleado</a>
 
         <ul>
             @foreach ($empleados as $empleado)

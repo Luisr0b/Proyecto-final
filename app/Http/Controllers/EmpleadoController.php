@@ -12,19 +12,11 @@ class EmpleadoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id = null)
+    public function index()
     {
-        $empleados = [];
-        $empleados[] = ['nombre' => 'Luis Uriel Robles Estrada', 'correo' => 'sistemas@tracto.com.mx', 'n-nomina' => '5917'];
-
-        if(!is_null($id)) {
-            $empleado = $empleados[$id];
-        } else {
-            $empleado = null;
-        }
+        $empleados = Empleado::all();
         
         return view('empleados.indexempleado')->with(['empleados' => $empleados]);
-        //return view('empleados', compact('empleados', 'empleado'));
     }
 
     /**
@@ -45,13 +37,15 @@ class EmpleadoController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request -> all());
         $empleado = new Empleado();
         $empleado->nombre = $request->nombre;
         $empleado->correo = $request->correo;
         $empleado->n_nomina = $request->n_nomina;
+        $empleado->departamento = $request->departamento;
         $empleado->save();
 
-        return redirect('/empleados');
+        return redirect('/empleado');
     }
 
     /**

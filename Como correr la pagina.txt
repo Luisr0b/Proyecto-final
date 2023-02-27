@@ -1,5 +1,9 @@
 Instalar "composer install"
 
+cp .env.example .env
+
+php artisan key:generate
+
 Luego ejecutar "php artisan migrate"
 
 Luego ejecutar "php artisan serve"

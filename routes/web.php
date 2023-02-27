@@ -23,4 +23,4 @@ Route::get('/canciones/{id?}', [PaginasController::class, 'canciones']);
 Route::get('/contacto', [PaginasController::class, 'contacto']);
 Route::post('/contacto', [PaginasController::class, 'postContacto']);
 
-Route::resource('empleado', EmpleadoController::class);
+Route::resource('/empleado', EmpleadoController::class);
