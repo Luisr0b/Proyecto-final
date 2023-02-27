@@ -8,4 +8,4 @@ Luego ejecutar "php artisan migrate"
 
 Luego ejecutar "php artisan serve"
 
-Hola como estas
+Hola como estas?
