@@ -13,10 +13,10 @@
 
         <ul>
             @foreach ($empleados as $empleado)
-                <li>{{ $empleado['nombre'] }} - {{ $empleado['correo'] }} - {{ $empleado['n_nomina'] }} - {{ $empleado['departamento'] }}</li>
+                <li>{{ $empleado['nombre'] }} - {{ $empleado['correo'] }} - {{ $empleado['n_nomina'] }} - {{ $empleado['puesto'] }} - {{ $empleado['departamento'] }}</li>
             @endforeach
         </ul>
-
+    <br>
     <a href="empleado/create">Editar empleado</a>
 
 </body>

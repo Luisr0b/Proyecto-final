@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('nomb_corto');
             $table->string('correo');
             $table->string('n_nomina')->unique();
+            $table->string('puesto');
             $table->string('departamento');
             $table->timestamps();
         });

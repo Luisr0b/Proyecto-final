@@ -34,13 +34,29 @@
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
+            <label for="puesto">Puesto</label><br>
+            <input type="text" name="puesto" id="puesto"><br>
+            @error('puesto')
+                <h5>{{$meesage }}</h5>
+            @enderror
+            <br>
             <label for="departamento">Departamento</label><br>
-            <input type="text" name="departamento" id="departamento"><br>
+            <select name="departamento" id="departamento">
+                <option selected>Seleccionar departamento</option>
+                <option value="Sistemas">Sistemas</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Almacen">Almacen</option>
+                <option value="Produccion">Produccion</option>
+            </select>
             @error('departamento')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
+            <br>
             <input type="submit" value="Enviar">
+            <br>
+            <a href="/empleado">Regresar</a>
         </form>
 </body>
 </html>
