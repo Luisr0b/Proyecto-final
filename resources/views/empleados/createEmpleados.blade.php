@@ -16,30 +16,35 @@
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
+
             <label for="nomb_corto">Nombre corto</label><br>
             <input type="text" name="nomb_corto" id="nomb_corto" required><br>
             @error('nomb_corto')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
+
             <label for="correo">Correo electronico</label><br>
             <input type="text" name="correo" id="correo"><br>
             @error('correo')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
+
             <label for="n_nomina">Numero de nomina</label><br>
-            <input type="number" name="n_nomina" id="n_nomina"><br>
+            <input type="number" name="n_nomina" id="n_nomina" required><br>
             @error('n_nomina')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
+
             <label for="puesto">Puesto</label><br>
-            <input type="text" name="puesto" id="puesto"><br>
+            <input type="text" name="puesto" id="puesto" required><br>
             @error('puesto')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
+
             <label for="departamento">Departamento</label><br>
             <select name="departamento" id="departamento">
                 <option selected>Seleccionar departamento</option>
@@ -60,13 +65,15 @@
             @enderror
             <br>
             <br>
+
             <label for="fecha_ingreso">Fecha de ingreso</label><br>
             <input type="date" name="fecha_ingreso" id="fecha_ingreso" min="1950-01-01" max="2099-01-01">
             @error('fecha_ingreso')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br><br>
-            <input type="submit" value="Enviar">
+
+            <input type="submit" value="Agregar empleado">
             <br>
             <a href="/empleado">Regresar</a>
         </form>

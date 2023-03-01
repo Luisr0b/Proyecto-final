@@ -17,7 +17,7 @@
             @endforeach
         </ul>
 
-    <a href="empleado/create">Editar empleado</a>
+    <a href="empleado/edit">Editar empleado</a>
 
 </body>
 </html>
