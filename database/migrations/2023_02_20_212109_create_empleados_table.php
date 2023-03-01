@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('n_nomina')->unique();
             $table->string('puesto');
             $table->string('departamento');
+            $table->string('fecha_ingreso');
             $table->timestamps();
         });
     }

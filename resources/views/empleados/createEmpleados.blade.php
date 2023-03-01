@@ -44,16 +44,28 @@
             <select name="departamento" id="departamento">
                 <option selected>Seleccionar departamento</option>
                 <option value="Sistemas">Sistemas</option>
-                <option value="Ventas">Ventas</option>
+                <option value="Almacen">Almacén</option>
+                <option value="Administracion">Administración</option>
+                <option value="Calidad">Calidad</option>
+                <option value="Compras">Compras</option>
+                <option value="Contabilidad">Contabilidad</option>
                 <option value="Marketing">Marketing</option>
-                <option value="Almacen">Almacen</option>
-                <option value="Produccion">Produccion</option>
+                <option value="Produccion">Producción</option>
+                <option value="Recursos Humanos">Recursos Humanos</option>
+                <option value="Sucursales">Sucursales</option>
+                <option value="Ventas">Ventas</option>
             </select>
             @error('departamento')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
             <br>
+            <label for="fecha_ingreso">Fecha de ingreso</label><br>
+            <input type="date" name="fecha_ingreso" id="fecha_ingreso" min="1950-01-01" max="2099-01-01">
+            @error('fecha_ingreso')
+                <h5>{{$meesage }}</h5>
+            @enderror
+            <br><br>
             <input type="submit" value="Enviar">
             <br>
             <a href="/empleado">Regresar</a>

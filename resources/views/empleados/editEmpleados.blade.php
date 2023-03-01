@@ -13,7 +13,7 @@
 
         <ul>
             @foreach ($empleados as $empleado)
-                <li>{{ $empleado['nombre'] }} - {{ $empleado['correo'] }} - {{ $empleado['n_nomina'] }} - {{ $empleado['puesto'] }} - {{ $empleado['departamento'] }}</li>
+                <li>{{ $empleado['nombre'] }} - {{ $empleado['correo'] }} - {{ $empleado['n_nomina'] }} - {{ $empleado['puesto'] }} - {{ $empleado['departamento'] }} - {{ $empleado['fecha_ingreso'] }}</li>
             @endforeach
         </ul>
     <br>

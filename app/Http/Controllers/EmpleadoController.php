@@ -43,7 +43,9 @@ class EmpleadoController extends Controller
         $empleado->nomb_corto = $request->nomb_corto;
         $empleado->correo = $request->correo;
         $empleado->n_nomina = $request->n_nomina;
+        $empleado->puesto = $request->puesto;
         $empleado->departamento = $request->departamento;
+        $empleado->fecha_ingreso = $request->fecha_ingreso;
         $empleado->save();
 
         return redirect('/empleado');
