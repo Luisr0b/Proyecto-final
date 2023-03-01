@@ -39,7 +39,8 @@ class EmpleadoController extends Controller
     {
         //dd($request -> all());
         $empleado = new Empleado();
-        $empleado->nombre = $request->nombre;
+        $empleado->nomb_completo = $request->nomb_completo;
+        $empleado->nomb_corto = $request->nomb_corto;
         $empleado->correo = $request->correo;
         $empleado->n_nomina = $request->n_nomina;
         $empleado->departamento = $request->departamento;

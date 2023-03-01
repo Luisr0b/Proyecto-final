@@ -10,9 +10,15 @@
     <h1>Agregar empleado</h1>
         <form action="/empleado" method="POST">
             @csrf
-            <label for="nombre">Nombre del empleado</label><br>
-            <input type="text" name="nombre" id="nombre" required><br>
-            @error('nombre')
+            <label for="nomb_completo">Nombre completo</label><br>
+            <input type="text" name="nomb_completo" id="nomb_completo" required><br>
+            @error('nomb_completo')
+                <h5>{{$meesage }}</h5>
+            @enderror
+            <br>
+            <label for="nomb_corto">Nombre corto</label><br>
+            <input type="text" name="nomb_corto" id="nomb_corto" required><br>
+            @error('nomb_corto')
                 <h5>{{$meesage }}</h5>
             @enderror
             <br>
