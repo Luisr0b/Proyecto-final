@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nomb_completo');
             $table->string('nomb_corto');
-            $table->string('correo')->unique();
+            $table->string('correo');
             $table->string('n_nomina')->unique();
             $table->string('departamento');
             $table->timestamps();
