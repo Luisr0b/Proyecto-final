@@ -14,10 +14,10 @@
         <ul>
             @foreach ($empleados as $empleado)
                 <li>{{ $empleado['nomb_completo'] }} - {{ $empleado['nomb_corto'] }} - {{ $empleado['correo'] }} - {{ $empleado['n_nomina'] }} - {{ $empleado['puesto'] }} - {{ $empleado['departamento'] }} - {{ $empleado['fecha_ingreso'] }}</li>
+                <a href="empleado/{{ $empleado->id }}">Detalles</a>
             @endforeach
-        </ul>
 
-    <a href="empleado/edit">Editar empleado</a>
+        </ul>
 
 </body>
 </html>

@@ -70,7 +70,7 @@ class EmpleadoController extends Controller
      */
     public function edit(Empleado $empleado)
     {
-        return view('/empleado.editEmpleados',compact('empleado'));
+        return view('empleados.editEmpleados',compact('empleado'));
     }
 
     /**
@@ -102,6 +102,7 @@ class EmpleadoController extends Controller
      */
     public function destroy(Empleado $empleado)
     {
-        //
+        $empleado->delete();
+        return redirect()->route('/empleado');
     }
 }

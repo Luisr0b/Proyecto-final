@@ -9,11 +9,11 @@
 <body>
     <h1>Editar Empleado</h1>
 
-    <form action="/empleado/{{empleado->id}}" method="POST">
+    <form action="/empleado/{{$empleado->id}}" method="POST">
         @csrf
         @method('PATCH')
         <label for="nomb_completo">Nombre completo</label><br>
-        <input type="text" name="nomb_completo" value='{{ $empleado->nomb_completo }}' required>
+        <input type="text" name="nomb_completo" value='{{ old('nomb_completo') ?? $empleado->nomb_completo }}' required>
         @error('nomb_completo')
             <h5>{{$meesage }}</h5>
         @enderror
