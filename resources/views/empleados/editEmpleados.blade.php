@@ -17,7 +17,7 @@
         @error('nomb_completo')
             <h5>{{$meesage }}</h5>
         @enderror
-        <br>
+        <br><br>
 
         <label for="nomb_corto">Nombre corto</label><br>
         <input type="text" name="nomb_corto" value='{{ $empleado->nomb_corto }}' required><br>
@@ -76,7 +76,7 @@
             <br><br>
 
             <input type="submit" value="Editar empleado">
-            <br>
+            <br><br>
             <a href="/empleado">Regresar</a>
     </form>
 

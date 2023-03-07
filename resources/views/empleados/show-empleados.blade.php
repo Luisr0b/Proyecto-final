@@ -32,5 +32,13 @@
         </li>
     </ul>
     <a href="/empleado/{{ $empleado->id }}/edit">Editar</a>
+    <br><br>
+    <form action="{{ route('empleado.destroy', $empleado) }} " method="POST">
+        @csrf
+        @method('DELETE')
+        <button type="submit">Borrar</button>
+    </form>
+    <br>
+    <a href="/empleado">Regresar</a>
 </body>
 </html>
