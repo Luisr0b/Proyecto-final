@@ -77,7 +77,7 @@
 
             <input type="submit" value="Editar empleado">
             <br><br>
-            <a href="/empleado">Regresar</a>
+            <a href="/empleado"><button>Regresar</button></a>
     </form>
 
 </body>

@@ -31,7 +31,7 @@
             Fecha de ingreso: {{ $empleado->fecha_ingreso}}
         </li>
     </ul>
-    <a href="/empleado/{{ $empleado->id }}/edit">Editar</a>
+    <a href="/empleado/{{ $empleado->id }}/edit"><button>Editar</button></a>
     <br><br>
     <form action="{{ route('empleado.destroy', $empleado) }} " method="POST">
         @csrf
@@ -39,6 +39,6 @@
         <button type="submit">Borrar</button>
     </form>
     <br>
-    <a href="/empleado">Regresar</a>
+    <a href="/empleado"><button>Regresar</button></a>
 </body>
 </html>

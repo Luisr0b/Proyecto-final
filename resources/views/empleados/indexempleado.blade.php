@@ -9,12 +9,11 @@
 <body>
     <h1>Empleados</h1>
 
-    <a href="empleado/create">Agregar empleado</a>
+    <a href="empleado/create"><button>Agregar empleado</button></a>
 
         <ul>
             @foreach ($empleados as $empleado)
-                <li>{{ $empleado['nomb_completo'] }} - {{ $empleado['nomb_corto'] }} - {{ $empleado['correo'] }} - {{ $empleado['n_nomina'] }} - {{ $empleado['puesto'] }} - {{ $empleado['departamento'] }} - {{ $empleado['fecha_ingreso'] }}</li>
-                <a href="empleado/{{ $empleado->id }}">Detalles</a>
+                <li>{{ $empleado['nomb_completo'] }} - {{ $empleado['nomb_corto'] }} - {{ $empleado['correo'] }} - {{ $empleado['n_nomina'] }} - {{ $empleado['puesto'] }} - {{ $empleado['departamento'] }} - {{ $empleado['fecha_ingreso'] }} <a href="empleado/{{ $empleado->id }}"><button>Detalles</button></a></li>
             @endforeach
 
         </ul>

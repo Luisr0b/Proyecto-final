@@ -74,8 +74,8 @@
             <br><br>
 
             <input type="submit" value="Agregar empleado">
-            <br>
-            <a href="/empleado">Regresar</a>
+            <br><br>
+            <a href="/empleado"><button>Regresar</button></a>
         </form>
 </body>
 </html>
