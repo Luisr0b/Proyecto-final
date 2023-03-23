@@ -17,7 +17,7 @@
 
     <a href="empleado/create"><button>Agregar empleado</button></a><br><br>
 
-    <table border="1">
+    <table class="table table-bordered border-1">
         <tr>
             <td>ID</td>
             <td>Nombre completo</td>
@@ -27,6 +27,7 @@
             <td>Puesto</td>
             <td>Departamento</td>
             <td>Fecha de ingreso</td>
+            <td>Detalles</td>
         </tr>
 
         <?php
