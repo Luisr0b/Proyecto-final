@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Empleados</title>
-</head>
-<body>
+<?php
+    $conexion=mysqli_connect('localhost','root','','tracto-int');
+?>
+
+@extends('layouts.app')
+ 
+@section('title', 'Page Title')
+ 
+@section('sidebar')
+    @parent
+ 
+    <p>This is appended to the master sidebar.</p>
+@endsection
+ 
+@section('content')
     <h1>Agregar empleado</h1>
         <form action="/empleado" method="POST">
             @csrf
@@ -77,5 +83,4 @@
             <br><br>
             <a href="/empleado"><button>Regresar</button></a>
         </form>
-</body>
-</html>
+@endsection

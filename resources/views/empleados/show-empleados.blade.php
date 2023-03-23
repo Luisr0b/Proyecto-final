@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empleado</title>
-</head>
-<body>
-    <h1>Detalle de empleado</h1>
+@extends('layouts.app')
+ 
+@section('title', 'Page Title')
+ 
+@section('sidebar')
+    @parent
+ 
+    <p>This is appended to the master sidebar.</p>
+@endsection
+ 
+@section('content')
+<h1>Detalle de empleado</h1>
     <ul>
         <li>
             Nombre completo: {{ $empleado->nomb_empleado}}
@@ -40,5 +42,4 @@
     </form>
     <br>
     <a href="/empleado"><button>Regresar</button></a>
-</body>
-</html>
+@endsection
