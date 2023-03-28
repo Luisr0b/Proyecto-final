@@ -3,16 +3,16 @@
 ?>
 
 @extends('layouts.app')
- 
+
 @section('title', 'Page Title')
- 
+
 @section('sidebar')
     @parent
- 
-    <p>This is appended to the master sidebar.</p>
+
 @endsection
- 
+
 @section('content')
+<br><br><br><br>
     <h1>Agregar empleado</h1>
         <form action="/empleado" method="POST">
             @csrf
