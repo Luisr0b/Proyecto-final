@@ -82,7 +82,7 @@
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
-    color: #FFFFFF;
+    color: #17469e;
     font-weight: 500;
     outline: none;
     transition: .5s;
@@ -90,7 +90,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #FFFFFF;
+    color: #17469e;
 }
 
 .sticky-top.navbar .navbar-nav .nav-link {
@@ -170,7 +170,7 @@
         height: 2px;
         bottom: 10px;
         left: 0;
-        background: #FFFFFF;
+        background: #17469e;
         opacity: 0;
         transition: .5s;
     }
