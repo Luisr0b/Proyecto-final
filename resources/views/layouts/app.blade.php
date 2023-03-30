@@ -54,7 +54,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="empleado" class="nav-item nav-link active">Empleados</a>
+                        <a href="empleado.index" class="nav-item nav-link active">Empleados</a>
                         <a href="about.html" class="nav-item nav-link">Tickets</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
                         <div class="nav-item dropdown">
@@ -68,8 +68,20 @@
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        @if (Route::has('login'))
+                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                            @auth
+                                <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                            @else
+                                <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                                @if (Route::has('register'))
+                                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                                @endif
+                            @endauth
+                        </div>
+                    @endif
                     </div>
-                    <a href="" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Free Quote</a>
                 </div>
             </nav>
 
