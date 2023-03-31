@@ -5,9 +5,13 @@
 @section('sidebar')
     @parent
  
-    <p>THola.</p>
+    
 @endsection
  
 @section('content')
-    <p>This is my body content.</p>
+<br><br><br><br><br>
+    <div>
+        <h2>Bienvenido a la pagina de Soporte de Autopartes Tracto de Mexico</h2>
+        <h3>Aquí podras hacer los Tickets de soporte entre otras cosas</h3>
+    </div>
 @endsection

@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Contacto</h1>
-    <form action="contacto" method="POST">
-        @csrf
-        <label for="nombre">Nombre</label><br>
-        <input type="text" name="nombre" id="nombre" required><br>
-        @error('nombre')
-            <h5>{{$meesage }}</h5>
-        @enderror
-        <br>
-        <label for="codigo">Código</label><br>
-        <input type="text" name="codigo" id="codigo"><br>
-        @error('codigo')
-            <h5>{{$meesage }}</h5>
-        @enderror
-        <input type="submit" value="Enviar">
-    </form>
-</body>
-</html>
+@extends('layouts.app')
+ 
+@section('title', 'Page Title')
+ 
+@section('sidebar')
+    @parent
+ 
+    
+@endsection
+ 
+@section('content')
+<br><br><br><br><br>
+    <h5 class="text-blue mb-4">Contactanos</h5>
+    <p><i class="fa fa-phone-alt me-3"></i>Sergio Jimenez Ext. 1106</p>
+    <p><i class="fa fa-envelope me-3"></i>sjimenez@tracto.com.mx</p>
+    <p><i class="fa fa-phone-alt me-3"></i>Luis Delgadillo Ext. 1116</p>
+    <p><i class="fa fa-envelope me-3"></i>soporte@tracto.com.mx</p>
+    <p><i class="fa fa-phone-alt me-3"></i>Uriel Robles Ext. 1114</p>
+    <p><i class="fa fa-envelope me-3"></i>sistemas@tracto.com.mx</p>
+@endsection

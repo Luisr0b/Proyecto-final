@@ -5,10 +5,11 @@
 @section('sidebar')
     @parent
  
-    <p>This is appended to the master sidebar.</p>
+    <br>
 @endsection
  
 @section('content')
+<br><br><br>
 <h1>Detalle de empleado</h1>
     <ul>
         <li>

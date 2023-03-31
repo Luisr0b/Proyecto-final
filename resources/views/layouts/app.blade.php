@@ -45,7 +45,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index" class="navbar-brand p-0">
+                <a href="/index.php" class="navbar-brand p-0">
                     <h1 class="m-0"></h1>
                     <img src="/img/logo.png" alt="Logo">
                 </a>
@@ -54,7 +54,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="empleado.index" class="nav-item nav-link active">Empleados</a>
+                        <a href="/empleado" class="nav-item nav-link active">Empleados</a>
                         <a href="about.html" class="nav-item nav-link">Tickets</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
                         <div class="nav-item dropdown">
@@ -67,7 +67,7 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contacto" class="nav-item nav-link">Contact</a>
                         @if (Route::has('login'))
                         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                             @auth
@@ -79,8 +79,8 @@
                                     <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
                                 @endif
                             @endauth
-                        </div>
-                    @endif
+                            </div>
+                        @endif
                     </div>
                 </div>
             </nav>
@@ -99,7 +99,7 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Contactanos</h5>
+                        <h5><a class="text-white mb-4" href="/contacto">Contactanos</a></h5>
                         <p><i class="fa fa-phone-alt me-3"></i>Sergio Jimenez Ext. 1106</p>
                         <p><i class="fa fa-envelope me-3"></i>sjimenez@tracto.com.mx</p>
                         <p><i class="fa fa-phone-alt me-3"></i>Luis Delgadillo Ext. 1116</p>
@@ -110,7 +110,6 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Enlace rapido</h5>
                         <a class="btn btn-link" href="empleado">Empleados</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
                         <a class="btn btn-link" href="">Privacy Policy</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                         <a class="btn btn-link" href="">Career</a>
@@ -118,7 +117,6 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
                         <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
                         <a class="btn btn-link" href="">Privacy Policy</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                         <a class="btn btn-link" href="">Career</a>
