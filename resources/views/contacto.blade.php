@@ -10,7 +10,8 @@
  
 @section('content')
 <br><br><br><br><br>
-    <h5 class="text-blue mb-4">Contactanos</h5>
+    <h4 class="text-blue mb-4">Contactanos</h4>
+    <p class="text-blue mb-4">Si requieres asistencia puedes contactarnos mediante correo o marcando a la extensión</p>
     <p><i class="fa fa-phone-alt me-3"></i>Sergio Jimenez Ext. 1106</p>
     <p><i class="fa fa-envelope me-3"></i>sjimenez@tracto.com.mx</p>
     <p><i class="fa fa-phone-alt me-3"></i>Luis Delgadillo Ext. 1116</p>

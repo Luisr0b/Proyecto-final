@@ -56,7 +56,7 @@
                     <div class="navbar-nav ms-auto py-0">
                         <a href="/empleado" class="nav-item nav-link active">Empleados</a>
                         <a href="about.html" class="nav-item nav-link">Tickets</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="/tecnico" class="nav-item nav-link">Tecnicos</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -99,13 +99,7 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
-                        <h5><a class="text-white mb-4" href="/contacto">Contactanos</a></h5>
-                        <p><i class="fa fa-phone-alt me-3"></i>Sergio Jimenez Ext. 1106</p>
-                        <p><i class="fa fa-envelope me-3"></i>sjimenez@tracto.com.mx</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>Luis Delgadillo Ext. 1116</p>
-                        <p><i class="fa fa-envelope me-3"></i>soporte@tracto.com.mx</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>Uriel Robles Ext. 1114</p>
-                        <p><i class="fa fa-envelope me-3"></i>sistemas@tracto.com.mx</p>
+                        <h5><a class="text-white mb-4" href="/contacto">Si requieres asistencia contactanos haciendo click</a></h5>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Enlace rapido</h5>
